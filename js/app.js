@@ -69,9 +69,9 @@ endSessionBtn.addEventListener('click', function() {
     tests.forEach(test => {
         const fieldset = document.createElement('fieldset');
         fieldset.innerHTML = `<legend>Test ${test.section}</legend>
-            <p>Idea: ${test.idea}</p>
-            <p>Notes: ${test.notes}</p>
-            <p>New ideas: ${test.newIdeas}</p>`;
+            <p id="idea">Idea: ${test.idea}</p>
+            <p id="notes">Notes: ${test.notes}</p>
+            <p id="newideas">New ideas: ${test.newIdeas}</p>`;
         report.appendChild(fieldset);
     });
 
